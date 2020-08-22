@@ -1,10 +1,10 @@
 package edu.luc.cs.laufer.cs372.shapes
 
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
 import TestFixtures._
 
-class TestBoundingBox extends FunSuite {
+class TestBoundingBox extends AnyFunSuite {
 
   def testBoundingBox(description: String, s: Shape, x: Int, y: Int, width: Int, height: Int) = {
     test(description) {
