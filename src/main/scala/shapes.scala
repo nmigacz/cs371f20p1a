@@ -15,8 +15,5 @@ case class Location(x: Int, y: Int, shape: Shape) extends Shape {
 
 case class Group(shapes:Shape*) extends Shape{
   require(shapes != null, "null shape in Group")
-  shapes.contains(shapes, "null shape in shapes")
+  shapes.contains(null, "null shape in shapes")
 }
-
-// TODO add missing case classes (see test fixtures)
-// TODO must include validity checking for constructor arguments
